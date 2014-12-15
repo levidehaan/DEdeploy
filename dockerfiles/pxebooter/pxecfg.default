@@ -1,0 +1,3 @@
+DEFAULT linux
+KERNEL linux
+APPEND initrd=initrd.gz
