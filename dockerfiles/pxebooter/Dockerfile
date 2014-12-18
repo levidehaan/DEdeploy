@@ -10,11 +10,11 @@ ADD https://raw.github.com/jpetazzo/pipework/master/pipework /root/pipework
 
 ADD cmd.this /root/cmd.this
 
-ADD pxecfg.default /tftp/pxelinux.cfg/default
+ADD installfiles /tftp/
 
-ADD installfiles /tftp/boot/
+ADD isomount /tftp/ubuntu
 
-ADD isomount /tfptp/ubuntu
+ADD dnsmasq.conf /etc/dnsmasq.conf
 
 RUN chmod +x /root/pipework; chmod +x /root/cmd.this
 

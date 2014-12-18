@@ -89,7 +89,7 @@ function setupNetworking() {
 
     sudo ./pipework br0 $PXECID 192.168.242.1/24 2>&1 | tee -a $OUTPUT
 
-	#sudo brctl addif br0 $INTNAME 2>&1 | tee -a $OUTPUT
+	sudo brctl addif br0 $INTNAME 2>&1 | tee -a $OUTPUT
 
 	dialog --backtitle "done setting up networking"\
 	 --title "Network Setup Complete!" --clear\
